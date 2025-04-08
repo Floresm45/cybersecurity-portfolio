@@ -37,23 +37,13 @@ Simulated a phishing attack and used Splunk to identify indicators of compromise
 
 ## 🔍 Splunk Queries & Visualizations
 
-### 📎 Attachments by Sender
-```spl
-index=main attachment!="-" 
-| stats count by sender, attachment 
-| sort -count
-```
-![Attachments by Sender](./screenshots/attachments_by_sender.png)
-
----
-
 ### 🔗 URLs Sent by Sender
 ```spl
 index=main url!="-" 
 | stats count by sender, url 
 | sort -count
 ```
-![URLs by Sender](./screenshots/urls_by_sender.png)
+![URLs Sent by Sender](https://github.com/user-attachments/assets/93d8051a-ff96-4421-bd0d-a94a2d8a01a9)
 
 ---
 
@@ -62,16 +52,7 @@ index=main url!="-"
 index=main 
 | top recipient
 ```
-![Top Recipients](./screenshots/top_recipients.png)
-
----
-
-### 🧾 Top Subject Lines
-```spl
-index=main 
-| top subject
-```
-![Top Subjects](./screenshots/top_subjects.png)
+![Most Targeted Recipients](https://github.com/user-attachments/assets/453cb61e-8ab7-4b7b-a66a-a332714a4bf4)
 
 ---
 
@@ -81,7 +62,7 @@ index=main
 | stats count by sender 
 | sort -count
 ```
-![Total Emails by Sender](./screenshots/top_senders.png)
+![Top Senders (Potential Spammers)](https://github.com/user-attachments/assets/78fc2a63-f62e-43bd-bad6-a8c8fa2af129)
 
 ---
 
@@ -90,7 +71,7 @@ index=main
 index=main 
 | timechart span=1h count by sender
 ```
-![Email Volume Over Time](phishing-investigation/screenshots/Email Volume Over Time_2025-04-07 at 07.37.19-0700_Splunk.png)
+![Email Volume Over Time](https://github.com/user-attachments/assets/7911962c-4764-433e-a298-5f78b3b1b3a9)
 
 ---
 
