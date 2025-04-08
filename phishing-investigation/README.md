@@ -1,3 +1,5 @@
+```markdown
+[Jump to Queries & Visuals](#splunk-queries--visualizations)
 # Phishing Incident Investigation
 
 ## Project Overview
@@ -21,3 +23,29 @@ Simulated a phishing attack and used Splunk to identify indicators of compromise
 ## Key Metrics
 - Response time improved by ~40% using automation
 - Reduced false positives by refining search filters
+
+## 🔍 Splunk Queries & Visualizations
+
+### Attachments by Sender
+spl
+index=main attachment!="-" 
+| stats count by sender, attachment 
+| sort -count
+
+### URLs Sent by Sender
+index=main url!="-" 
+| stats count by sender, url 
+| sort -count
+
+### Most Targeted Recipients
+index=main 
+| top recipient
+
+### Top Subject Lines
+index=main 
+| top subject
+
+### Email Volume Over Time
+index=main 
+| timechart span=1h count by sender
+
