@@ -90,7 +90,7 @@ index=main
 index=main 
 | timechart span=1h count by sender
 ```
-![Email Volume Over Time](./screenshots/email_volume.png)
+![Email Volume Over Time](./phishing-investigation/screenshots/Email Volume Over Time_2025-04-07 at 07.37.19-0700_Splunk.png)
 
 ---
 
