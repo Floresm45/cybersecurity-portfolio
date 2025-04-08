@@ -38,39 +38,43 @@ Simulated a phishing attack and used Splunk to identify indicators of compromise
 ## 🔍 Splunk Queries & Visualizations
 
 ### 🔗 URLs Sent by Sender
-```spl
+<pre>```spl
 index=main url!="-" 
 | stats count by sender, url 
 | sort -count
-```
+```</pre>
 ![URLs Sent by Sender](https://github.com/user-attachments/assets/93d8051a-ff96-4421-bd0d-a94a2d8a01a9)
 
 ---
 
 ### 🎯 Most Targeted Recipients
+<pre>
 ```spl
 index=main 
 | top recipient
 ```
+</pre>
 ![Most Targeted Recipients](https://github.com/user-attachments/assets/453cb61e-8ab7-4b7b-a66a-a332714a4bf4)
 
 ---
 
 ### 📬 Total Emails by Sender
+<pre>
 ```spl
 index=main 
 | stats count by sender 
 | sort -count
 ```
+</pre>
 ![Top Senders (Potential Spammers)](https://github.com/user-attachments/assets/78fc2a63-f62e-43bd-bad6-a8c8fa2af129)
 
 ---
 
 ### 📈 Email Volume Over Time
-```spl
+<pre>```spl
 index=main 
 | timechart span=1h count by sender
-```
+```</pre>
 ![Email Volume Over Time](https://github.com/user-attachments/assets/7911962c-4764-433e-a298-5f78b3b1b3a9)
 
 ---
@@ -92,5 +96,6 @@ index=main
 ## 📸 Dashboard Preview
 > Here’s a snapshot of the full Splunk dashboard.
 
-![Dashboard Overview](./screenshots/dashboard_full.png)
+![Phishing Email Threat Analysis](https://github.com/user-attachments/assets/63059d8c-efd3-4a69-8490-2f4e02b630b0)
+
 Restored full README with dashboard and queries
