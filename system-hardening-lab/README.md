@@ -27,8 +27,10 @@ This lab simulates a real-world system hardening process on an Ubuntu 22.04 virt
   sudo apt install lynis
   sudo lynis audit system
   ```
+![Lynis warnings and suggestions](https://github.com/user-attachments/assets/1f6b3446-ea38-42d2-bd2c-f0bf21be227e)
+![Lynis audit score](https://github.com/user-attachments/assets/ba31d417-f72a-4cc8-9f36-f0c737773f4a)
+- 📸 *Screenshot: Lynis initial scan results* 
 
-- 📸 *Screenshot: Lynis initial scan results*
 - 🔍 Findings: Weak SSH config, no firewall, poor password policies, missing auditing
 
 ---
@@ -51,9 +53,15 @@ This lab simulates a real-world system hardening process on an Ubuntu 22.04 virt
   ```bash
   sudo systemctl restart ssh
   ```
+![Changing SSH permissions](https://github.com/user-attachments/assets/5d50e330-084d-4206-b578-2c56f9f0a501)
 
-- 📸 *Screenshot: Edited sshd_config file (highlighted changes)*
-- 📸 *Screenshot: Terminal confirming SSH restart*
+📸 *Screenshot: Edited sshd_config file (highlighted changes)*
+
+
+
+![SSH running after config](https://github.com/user-attachments/assets/63a97362-9e7b-4d36-9ea0-302283916438)
+
+📸 *Screenshot: Terminal confirming SSH restart*
 
 ---
 
@@ -71,6 +79,8 @@ This lab simulates a real-world system hardening process on an Ubuntu 22.04 virt
   ```
 
 - 🔒 Allowed only essential ports
+
+![UFW status update](https://github.com/user-attachments/assets/e3741dcf-e1e5-4f7e-9b90-58463a24f009)
 - 📸 *Screenshot: Terminal output from enabling UFW and status check*
 
 ---
@@ -91,7 +101,7 @@ This lab simulates a real-world system hardening process on an Ubuntu 22.04 virt
   sudo ausearch -m USER_LOGIN
   sudo aureport -au
   ```
-
+![Auditd status](https://github.com/user-attachments/assets/ee95f86c-aac9-47c6-a7ef-1950356498aa)
 - 📸 *Screenshot: `auditd` running + sample audit logs*
 
 ---
@@ -112,6 +122,7 @@ This lab simulates a real-world system hardening process on an Ubuntu 22.04 virt
   sudo fail2ban-client status sshd
   ```
 
+![Fail2ban client status   (jail)](https://github.com/user-attachments/assets/cd12f300-b4e3-4380-95e4-73889d4dba83)
 - 📸 *Screenshot: `fail2ban` service active + SSH jail active*
 
 ---
@@ -124,7 +135,8 @@ This lab simulates a real-world system hardening process on an Ubuntu 22.04 virt
   sudo lynis audit system
   ```
 
-- 📸 *Screenshot: Final hardening index and suggestions*
+![Lynis audit score post config](https://github.com/user-attachments/assets/e8958a93-fd39-47f7-8c3a-c942635a4123)
+- 📸 *Screenshot: Final hardening index*
 
 | Phase          | Lynis Hardening Index |
 |----------------|------------------------|
