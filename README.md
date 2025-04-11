@@ -17,7 +17,7 @@ A curated collection of hands-on cybersecurity projects I've built to demonstrat
 📷 **Screenshots included**  
 📈 **Result:** Security score improved from 65 → 85
 
-[🔗 View Project](https://github.com/Floresm45/System-Hardening-Lab)
+[🔗 View Project](https://github.com/Floresm45/cybersecurity-portfolio/tree/main/system-hardening-lab)
 
 ---
 
@@ -33,7 +33,7 @@ A curated collection of hands-on cybersecurity projects I've built to demonstrat
 📷 **Screenshots included**  
 📈 **Result:** Reduced detection time by 40% through custom logic
 
-[🔗 View Project](https://github.com/Floresm45/Phishing-Investigation)
+[🔗 View Project](https://github.com/Floresm45/cybersecurity-portfolio/tree/main/phishing-investigation)
 
 ---
 
