@@ -50,7 +50,7 @@ A curated collection of hands-on cybersecurity projects I've built to demonstrat
 📷 **Screenshots included**  
 📈 **Result:** EC2 hardening score: 66 (baseline secure configuration)
 
-[🔗 View Project]([https://github.com/Floresm45/Cloud-Security-Hardening-Lab](https://github.com/Floresm45/cybersecurity-portfolio/tree/main/cloud-security-hardening))
+[🔗 View Project](https://github.com/Floresm45/cybersecurity-portfolio/tree/main/cloud-security-hardening)
 
 ---
 
