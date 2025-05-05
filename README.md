@@ -55,7 +55,7 @@ A curated collection of hands-on cybersecurity projects I've built to demonstrat
 ---
 
 ## 📌 About Me
-Currently completing the Google Cybersecurity Certificate and building a job-ready portfolio. Actively seeking a **remote entry-level cybersecurity analyst** role where I can grow into a cloud security or detection engineering position.
+Completed the Google Cybersecurity Certificate and building a job-ready portfolio. Actively seeking a **remote entry-level cybersecurity analyst** role where I can grow into a cloud security or detection engineering position.
 
 📫 [LinkedIn](https://www.linkedin.com/in/manuel-dj-flores/) | [GitHub](https://github.com/Floresm45/cybersecurity-portfolio)
 
